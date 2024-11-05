@@ -3,7 +3,6 @@ from PyQt5.QtWidgets import QApplication, QWidget, QGridLayout, QPushButton, QLi
 from PyQt5.QtGui import QFont
 
 
-
 class Calculator(QWidget):
     def __init__(self):
         super().__init__()

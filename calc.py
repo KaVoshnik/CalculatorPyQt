@@ -89,7 +89,10 @@ class Calculator(QWidget):
     def calculate(self):
         try:
             result = eval(self.display.text())
-            self.display.setText(str(result))
+            if result % 1 == 0:
+                self.display.setText(str(int(result)))
+            else:
+                self.display.setText(str(result))
         except Exception as e:
             self.display.setText('Error')
 
